@@ -1,11 +1,15 @@
 h1, h2 {
-    color: pink;
+    color: purple;
 }
 
 .flex {
-    color: blue;
+    color: purple;
 }
 
 #test {
     color: red;
+}
+
+.christinas-element {
+    color: pink;
 }

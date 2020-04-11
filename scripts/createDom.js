@@ -18,6 +18,14 @@ ElementNode.prototype.createAttribute = function() {
 };
 
 // object parameters
+// Nav Menu
+const navParams = {
+    createElement: document.createElement('nav'),
+    createTextNode: document.createTextNode(''),
+    attributeType: 'class',
+    attributeName: 'masthead'
+}
+
 const h1Params = {
     createElement: document.createElement('H1'),
     createTextNode: document.createTextNode('Hello World!'),
@@ -25,29 +33,18 @@ const h1Params = {
     attributeName: 'flex'
 }
 
-const h2Params = {
-    createElement: document.createElement('H2'),
-    createTextNode: document.createTextNode('Hello Again!'),
-    attributeType: 'id',
-    attributeName: 'test'
-}
-
-const buttonParams = {
-    createElement: document.createElement('button'),
-    createTextNode: document.createTextNode('Submit')
-}
-
 // create new elements and add attributes with the createAttribute() prototype
+const nav = new ElementNode(navParams);
+nav.createAttribute();
+
 const h1 = new ElementNode(h1Params);
 h1.createAttribute();
 
-const h2 = new ElementNode(h2Params);
-h2.createAttribute();
-
-const button = new ElementNode(buttonParams);
-
 // put new nodes inside of array in order to iterate through each one of them
-const elements = [h1, h2, button];
+const elements = [];
+
+elements.unshift(nav);
+elements.push(h1);
 
 // iterate through elements array
 function elementBuilder() {
@@ -56,6 +53,6 @@ function elementBuilder() {
     }
 }
 
-// automatically load website when page loads
+// display elements to browser
 elementBuilder();
 
