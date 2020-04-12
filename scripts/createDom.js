@@ -1,4 +1,4 @@
-// constructor function
+// constructor function to create element nodes
 function ElementNode(params) {
     this.createElement = params.createElement;
     this.createTextNode = params.createTextNode;
@@ -26,6 +26,13 @@ const navParams = {
     attributeName: 'masthead'
 }
 
+const ulParams = {
+    createElement: document.createElement('ul'),
+    createTextNode: document.createTextNode(''),
+    attributeType: 'class',
+    attributeName: 'navElement'
+}
+
 const h1Params = {
     createElement: document.createElement('H1'),
     createTextNode: document.createTextNode('Hello World!'),
@@ -37,6 +44,9 @@ const h1Params = {
 const nav = new ElementNode(navParams);
 nav.createAttribute();
 
+const ul = new ElementNode(ulParams);
+ul.createAttribute();
+
 const h1 = new ElementNode(h1Params);
 h1.createAttribute();
 
@@ -44,6 +54,7 @@ h1.createAttribute();
 const elements = [];
 
 elements.unshift(nav);
+elements.push(ul);
 elements.push(h1);
 
 // iterate through elements array
@@ -55,4 +66,3 @@ function elementBuilder() {
 
 // display elements to browser
 elementBuilder();
-
