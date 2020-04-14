@@ -15,14 +15,22 @@ const nestUlNavParams = {
     childNode: document.getElementsByTagName('ul')[0]
 }
 
+const nestLiNavParams = {
+    parentNode: document.getElementsByTagName('ul')[0],
+    childNode: document.getElementsByTagName('li')[0]
+}
+
 // Create new NestElements object
 const nestUlNav = new NestElements(nestUlNavParams);
+
+const nestLiNav = new NestElements(nestLiNavParams);
 
 // Create array to put nested elements in a container
 const nestElementsArray = [];
 
 // Push the nested element into the array container
 nestElementsArray.push(nestUlNav);
+nestElementsArray.push(nestLiNav);
 
 // Iterate through the nested array container
 function nestElementBuilder() {

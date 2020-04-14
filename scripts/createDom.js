@@ -30,7 +30,14 @@ const ulParams = {
     createElement: document.createElement('ul'),
     createTextNode: document.createTextNode(''),
     attributeType: 'class',
-    attributeName: 'navElement'
+    attributeName: 'nav-container'
+}
+
+const liParams = {
+    createElement: document.createElement('li'),
+    createTextNode: document.createTextNode(''),
+    attributeType: 'class',
+    attributeName: 'nav-item'
 }
 
 const h1Params = {
@@ -47,6 +54,9 @@ nav.createAttribute();
 const ul = new ElementNode(ulParams);
 ul.createAttribute();
 
+const li = new ElementNode(liParams);
+li.createAttribute();
+
 const h1 = new ElementNode(h1Params);
 h1.createAttribute();
 
@@ -55,6 +65,8 @@ const elements = [];
 
 elements.unshift(nav);
 elements.push(ul);
+elements.push(li);
+elements.push(li);
 elements.push(h1);
 
 // iterate through elements array
