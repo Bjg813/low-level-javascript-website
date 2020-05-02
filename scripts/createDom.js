@@ -56,7 +56,7 @@ const logoImageParams = {
 
 const preludeParams = {
     createElement: document.createElement('div'),
-    createTextNode: document.createTextNode('A long time ago in a open office not so far away...'),
+    createTextNode: document.createTextNode('A long time ago in an office not so far away...'),
     attributeType: 'id',
     attributeName: 'prelude'
 }
@@ -98,21 +98,21 @@ const workingFromHomeParams = {
 
 const paragraphOneParams = {
     createElement: document.createElement('p'),
-    createTextNode: document.createTextNode('Turmoil! A pandemic has engulfed Uptown Studios and the city of Sacramento and nobody can find toilet paper. Darth COVID-19 has taken over the globe with its clone army, engulfing online searches and shutting down small busiensses. Leaving Uptown Studios no other choice but to create the resistance with a small group of rebels and Jedi marketers led by the #marketing4ever team.'),
+    createTextNode: document.createTextNode('Turmoil! Nobody can find toilet paper! A pandemic has engulfed Uptown Studios and the city of Sacramento. Darth COVID-19 has taken over the globe with its clone army, infecting online searches and shutting down small businesses. Leaving Uptown Studios no other choice but to create the resistance. With a brave alliance of rebels and Jedi marketers the #marketing4ever team is formed.'),
     attributeType: 'id',
     attributeName: 'paragraphOne'
 }
 
 const paragraphTwoParams = {
     createElement: document.createElement('p'),
-    createTextNode: document.createTextNode('Sensing a disturbance in the digital marketing force, Tina Reynolds declares all of her employees to work from home. Recession and doubts of to when normalcy may return, Jonathan the Wise applies for a small business loan. Allowing the marketing4ever team to keep working while having online zoom meetings in their home offices surrounded by their pets and families.'),
+    createTextNode: document.createTextNode('Sensing a disturbance in the digital marketing force, Tina Reynolds declares all employees work from home. Small businesses and nonprofits requiring help, turn to #marketing4ever to fight the imperial scum from their home office.'),
     attributeType: 'id',
     attributeName: 'paragraphTwo'
 }
 
 const paragraphThreeParams = {
     createElement: document.createElement('p'),
-    createTextNode: document.createTextNode('With a mission, some coffee, and high speed internet, the #marketing4ever team will lead their scrappy group of rebels through the void and disrupt how marketing is done forever...'),
+    createTextNode: document.createTextNode('With a mission, some coffee, and not so high speed internet, the #marketing4ever team will lead their scrappy group of rebels through the galaxy to disrupt how marketing is done forever...'),
     attributeType: 'id',
     attributeName: 'paragraphThree'
 }
@@ -130,14 +130,14 @@ audio.controls = audio.createElement.setAttribute('controls', 'controls');
 audio.onloadedData = audio.createElement.setAttribute('onloadeddata', 'var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 6600)');
 audio.duration = audio.createElement.setAttribute('duration', '65s');
 audio.type = audio.createElement.setAttribute('type', 'audio');
-// audio.source = audio.createElement.setAttribute('src', 'https://ia801703.us.archive.org/15/items/StarWarsThemeSongByJohnWilliams/Star%20Wars%20Theme%20Song%20By%20John%20Williams.mp3');
+audio.source = audio.createElement.setAttribute('src', 'https://ia801703.us.archive.org/15/items/StarWarsThemeSongByJohnWilliams/Star%20Wars%20Theme%20Song%20By%20John%20Williams.mp3');
 
 const logoSection = new ElementNode(logoSectionParams);
 logoSection.createAttribute();
 
 const logoImage = new ElementNode(logoImageParams);
 logoImage.createAttribute();
-logoImage.source = logoImage.createElement.setAttribute('src', 'https://www.boostability.com/wp-content/uploads/2020/03/yellow-boostability-star-wars-logo@3x.png');
+logoImage.source = logoImage.createElement.setAttribute('src', 'images/MARKETING TEAM.png');
 
 const prelude = new ElementNode(preludeParams);
 prelude.createAttribute();
